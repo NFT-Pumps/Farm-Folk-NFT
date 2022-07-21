@@ -10,7 +10,7 @@ const {
     bufferToHex,
 } = require("ethereumjs-utils");
 
-let signerPvtKey1 = '009f83b09a5faf68ce4fe9bed00f026026a3ae3ef59ff13e6a7ec9673bbdb717';
+let signerPvtKey1 = process.env.SigPK;
 
 //const signerPvtKey = Buffer.from(signerPvtKey1.substring(2,66), "hex");
 const signerPvtKey = Buffer.from(signerPvtKey1, "hex");
@@ -41,7 +41,7 @@ async function getClaimCodes() {
         { address : '0x92a293f563872671750060Ab5935e1117c3f7294', qty : 4},
         { address : '0xd865C9b31B5d0232fFdB8D2Db8D8006FEB955935', qty : 4},
         { address : '0x62b615759E6Ba4754d33d69F799AAf386a6EF279', qty : 4},
-        { address : '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715', qty : 4},
+        { address : '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715', qty : 5},
         { address : '0xd4F1AcE4299fE40566aDF8813a46f48bB0383e37', qty : 4},
         { address : '0xbF9A9d3D1A330AE27c5d9632A17F20D129c40209', qty : 4},
         { address : '0x23AEb45378AD26437cE1c3dD0ac4A015E9865596', qty : 4},
@@ -90,7 +90,7 @@ async function getClaimCodes() {
 
     // make a new logger
     const myLogger = new Console({
-    stdout: fs.createWriteStream("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266-signed-coupons.txt"),
+    stdout: fs.createWriteStream("ProjectWhitelist-signed-coupons.txt"),
     stderr: fs.createWriteStream("errStdErr.txt"),
     });
 

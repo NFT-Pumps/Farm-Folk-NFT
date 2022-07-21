@@ -3,7 +3,7 @@ module.exports = [
  'FFNFT',
  
     '0x9C3f261e2cc4C88DfaC56A5B46cdbf767eE2f231',
-    '0xf5e3D593FC734b267b313240A0FcE8E0edEBD69a',
+    '0xc01aC67ba14F13Af4fCD5b4ba3784F39a703cda0',
     'https://public-pre-ipfs.s3.amazonaws.com/Farm_Folk_NFT/assets/FarmFolkReveal.json',
     'https://public-pre-ipfs.s3.amazonaws.com/Farm_Folk_NFT/json/',
 
