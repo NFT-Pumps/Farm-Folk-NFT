@@ -47,6 +47,7 @@ async function getClaimCodes() {
         { address : '0x23AEb45378AD26437cE1c3dD0ac4A015E9865596', qty : 4},
         { address : '0xc5915dd28886523DCf96Bc29B5bFb1a77c4166D8', qty : 4},
         { address : '0xa7531F5A9D56089A79EBCb295bAba41bED80ca22', qty : 4},
+        { address : '0xAB8EA35D2e200bF9089b7E9Bee47568Fdb211012', qty : 4},
         { address : '0xf3C11bA805765Bd0aFce51f605FfDe875e04ef17', qty : 4}       
     ]      
     
