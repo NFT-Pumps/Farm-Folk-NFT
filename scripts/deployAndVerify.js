@@ -1,10 +1,10 @@
-// npx hardhat run --network rinkeby scripts/deployAndVerify.js
+// npx hardhat run scripts/deployAndVerify.js
 const hre = require("hardhat");
 const ethers = hre.ethers;
 const args = require("./deployArgs")
 
 async function main() {
-    const contractName = "GenericNFTPumpContract"
+    const contractName = "TheKreamerCollection"
     const confirmationWait = 5;
 
     const [deployer] = await ethers.getSigners();
