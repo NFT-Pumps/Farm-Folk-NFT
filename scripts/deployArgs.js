@@ -1,11 +1,11 @@
 module.exports = [
- 'The Kreamer Collection',
- 'TKCNFT',
+ 'Farm Folk NFT',
+ 'Farm Folk NFT',
  
     '0x9C3f261e2cc4C88DfaC56A5B46cdbf767eE2f231',
     '0xc01aC67ba14F13Af4fCD5b4ba3784F39a703cda0',
-    'https://public-pre-ipfs.s3.amazonaws.com/TheKreamerCollection/json/',
-    'https://public-pre-ipfs.s3.amazonaws.com/TheKreamerCollection/assets/KreamerReveal.json',
+    'https://public-pre-ipfs.s3.amazonaws.com/Farm_Folk_NFT/json/',
+    'https://public-pre-ipfs.s3.amazonaws.com/Farm_Folk_NFT/assets/FarmFolkReveal.json',
 
     [
         ethers.utils.getAddress('0xd708BA3dA864cC6E8596d3E53d3468bAB54Be9b0'),

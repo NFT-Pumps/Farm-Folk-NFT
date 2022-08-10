@@ -4,7 +4,7 @@ const ethers = hre.ethers;
 const args = require("./deployArgs")
 
 async function main() {
-    const contractName = "TheKreamerCollection"
+    const contractName = "FarmFolkNFT"
     const confirmationWait = 5;
 
     const [deployer] = await ethers.getSigners();
