@@ -8,19 +8,15 @@ module.exports = [
     'https://public-pre-ipfs.s3.amazonaws.com/Farm_Folk_NFT/assets/FarmFolkReveal.json',
 
     [
-        ethers.utils.getAddress('0xd708BA3dA864cC6E8596d3E53d3468bAB54Be9b0'),
-        ethers.utils.getAddress('0x8912e40d291693C7A86C418D52b46766780C6989'),
-        ethers.utils.getAddress('0x6b3ba9F0475C646FDaF2Bc207C285a485B88A747'),
-        ethers.utils.getAddress('0xE4cD887b35C7a7941EEbE8336c6Bfc5d1E9f7bfA'),
-        ethers.utils.getAddress('0x744193D5f234183FC821DfB0ACBb6eB8a1792Bc2'),
-        ethers.utils.getAddress('0x2E00F4Dd34c0A9aab2cd64B046469336A4914870')
+        ethers.utils.getAddress('0xB0d031F2885A40c99Bd8DC16A5a516DcFE46Ed25'),
+        ethers.utils.getAddress('0x7797902933A57808ED075709c1dFC8ED86baeFA0'),
+        ethers.utils.getAddress('0xAB8EA35D2e200bF9089b7E9Bee47568Fdb211012'),
+        ethers.utils.getAddress('0xf616a69aeE4f0174FFf7A1055afF334de481B93F')
     ],
     [
-        26,
-        12,
+        70,
         10,
-        6,
-        6,
-        40
+        10,
+        10
     ]
 ]
