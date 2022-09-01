@@ -39,7 +39,7 @@ contract FarmFolkNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
     uint256 public buyBonusMultiplier = 1;
 
     bool public publicMintIsOpen = false;
-    bool public privateMintIsOpen = false;
+    bool public privateMintIsOpen = true;
     bool public revealed = false;
 
     string _baseTokenURI;
@@ -76,11 +76,10 @@ contract FarmFolkNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
         return signer == _ClaimsPassSigner;
     }
 
-    modifier isWhitelisted(
-        uint256 amount,
-        WhitelistClaimPass memory whitelistClaimPass
-    ) {
-        bytes32 digest = keccak256(abi.encode(amount, msg.sender));
+    modifier isWhitelisted(uint8 amount, WhitelistClaimPass memory whitelistClaimPass) {
+        bytes32 digest = keccak256(
+            abi.encode(amount, msg.sender)
+        );
 
         require(
             _isVerifiedWhitelistClaimPass(digest, whitelistClaimPass),
