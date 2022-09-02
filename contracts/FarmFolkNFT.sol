@@ -116,8 +116,8 @@ contract FarmFolkNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
     }
 
     function whitelistClaimMint(
-        uint256 quantity, //Whitelist,
-        uint256 claimable,
+        uint8 quantity, //Whitelist,
+        uint8 claimable,
         WhitelistClaimPass memory whitelistClaimPass
     ) external payable isWhitelisted(claimable, whitelistClaimPass) {
         require(
@@ -125,17 +125,11 @@ contract FarmFolkNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
             "Not enough ether sent"
         );
 
-        uint256 supply = _tokenSupply.current();
-        quantity = quantity * buyBonusMultiplier;
+        uint256 supply = _tokenSupply.current();        
+
         require(privateMintIsOpen == true, "Claim Mint Closed");
-        require(
-            quantity + (supply - 1) <= MAX_TOKENS,
-            "Not enough tokens remaining"
-        );
-        require(
-            quantity <= claimable,
-            "Mint quantity can't be greater than claimable"
-        );
+        require(quantity + (supply-1) <= MAX_TOKENS, "Not enough tokens remaining");
+        require(quantity <= claimable, "Mint quantity can't be greater than claimable");
         require(quantity > 0, "Mint quantity must be greater than zero");
         require(quantity <= whitelistMintMaxLimit, "Mint quantity too large");
         require(
