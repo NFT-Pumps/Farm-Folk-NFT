@@ -464,10 +464,10 @@
     }
   },
   '0xa74EDecc0174e43a480321c75fF06cb3842B9d7D': {
-    q: 1,
+    q: 4,
     whitelistClaimPass: {
-      r: '0x113f92170c6122b37f782739217f299d8a3d5c9b97be98af5fff7fd960b73512',
-      s: '0x4e0d4ff7d259c27ff75c6ba4af785ff6daaebd38e8471e6a5995575a658fdf8a',
+      r: '0xa840002257174cdbb3514a691a5e67ba0d2c5a2d51190cccb1d4adcba8b66d42',
+      s: '0x4872287e7aa1e5348f9a9dd710ff97a611a11d549a3ddda9a6a9d738e24ea72d',
       v: 28
     }
   },
